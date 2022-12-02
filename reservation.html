@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팬텀-예약하기</title>
+  <link rel="icon" href="img/pc_favicon.svg" colo>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reservation.css">
+  <script src="https://kit.fontawesome.com/e2f89fe93c.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="wrap">
+      <h1 class="logo">PHANTOM</h1>
+      <div class="navBtn">
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </div>
+    </div>
+  </header>
+  <!-- navBar On시 배경색 지정 -->
+  <div class="dark"></div>
+  <!-- navigation bar -->
+  <div class="navBar">
+    <div class="wrap">
+      <!-- navBar_top -->
+      <div class="top">
+        <a href="login.html" class="loginBtn">
+          <p>로그인</p>
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+        <a href="#" class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+      <!-- navBar_middle -->
+      <div class="middle">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-futbol"></i>
+              <p>소개</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-rectangle-list"></i>
+              <p>공지사항</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-gift"></i>
+              <p>이벤트</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-circle-question"></i>
+              <p>문의</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-book-skull"></i>
+              <p>블랙리스트</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navBar_bottom -->
+      <div class="bottom">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-square-facebook"></i>
+              <p>페이스북</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+              <p>인스타그램</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-square-twitter"></i>
+              <p>트위터</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- main -->
+  <main>
+    <!-- main_search -->
+    <section id="search">
+      <div class="wrap">
+        <input type="text" placeholder="풋살장 구장명, 지역명등을 입력하세요.">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </section>
+    <!-- main_tabList -->
+    <section id="tab">
+      <div class="wrap">
+        <div class="menu">
+          <ul>
+            <li class="active"><a href="#">리스트</a></li>
+            <li><a href="#">지도</a></li>
+            <li><a href="#">찜 목록</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- main_detail -->
+    <section id="detail">
+      <div class="wrap">
+        <div class="first">
+          <ul class="top">
+            <li><button>샤워장</button></li>
+            <li><button>주차장</button></li>
+            <li><button>야간조명</button></li>
+          </ul>
+          <ul class="bottom">
+            <li><button>실내</button></li>
+            <li><button>풋살화대여</button></li>
+            <li><button>운동복대여</button></li>
+          </ul>
+        </div>
+        <div class="second">
+          <select name="region">
+            <option value="nationwide" selected>전국</option>
+            <option value="Seoul">서울</option>
+            <option value="Gyeonggi">경기</option>
+            <option value="Incheon">인천</option>
+            <option value="Gangwon">강원</option>
+            <option value="Chungbuk">충북</option>
+            <option value="Chungnma">충남</option>
+            <option value="Daejeon">대전</option>
+            <option value="Jeonbuk">전북</option>
+            <option value="Jeonnam">전남</option>
+            <option value="Gwangju">광주</option>
+            <option value="Kyeongbuk">경북</option>
+            <option value="Daegu">대구</option>
+            <option value="Kyeongnam">경남</option>
+            <option value="Ulsan">울산</option>
+            <option value="Busan">부산</option>
+            <option value="Jaeju">제주</option>
+          </select>
+        </div>
+    </section>
+    <!-- main_list -->
+    <section id="result">
+      <div class="wrap">
+        <div class="list">
+          <ul class="ground">
+            <li class="ground_list">
+              <div class="img">
+                <img src="img/ground_01.jpeg" alt="">
+              </div>
+              <div class="info">
+                <p class="place">서수원 호매실 풋살파크</p>
+                <p class="like"><i class="fa-solid fa-heart"></i>123</p>
+                <ul>
+                  <li><a href="#">#주차장</a></li>
+                  <li><a href="#">#야간조명</a></li>
+                  <li><a href="#">#풋살화대여</a></li>
+                </ul>
+                <p class="price">1시간 25,000원</p>
+              </div>
+            </li>
+            <li class="ground_list">
+              <div class="img">
+                <img src="img/ground_02.jpeg" alt="">
+              </div>
+              <div class="info">
+                <p class="place">광명 경기연세FC 풋살장</p>
+                <p class="like"><i class="fa-solid fa-heart"></i>31</p>
+                <ul>
+                  <li><a href="#">#실내</a></li>
+                  <li><a href="#">#주차장</a></li>
+                  <li><a href="#">#야간조명</a></li>
+                </ul>
+                <p class="price">1시간 35,000원</p>
+              </div>
+            </li>
+            <li class="ground_list">
+              <div class="img">
+                <img src="img/ground_03.jpg" alt="">
+              </div>
+              <div class="info">
+                <p class="place">HM풋살파크(대전탄방점)</p>
+                <p class="like"><i class="fa-solid fa-heart"></i>123</p>
+                <ul>
+                  <li><a href="#">#주차장</a></li>
+                  <li><a href="#">#야간조명</a></li>
+                  <li><a href="#">#풋살화대여</a></li>
+                </ul>
+                <p class="price">1시간 30,000원</p>
+              </div>
+            </li>
+            <li class="ground_list">
+              <div class="img">
+                <img src="img/ground_04.jpeg" alt="">
+              </div>
+              <div class="info">
+                <p class="place">인천 고올인 풋살장</p>
+                <p class="like"><i class="fa-solid fa-heart"></i>16</p>
+                <ul>
+                  <li><a href="#">#실내</a></li>
+                  <li><a href="#">#주차장</a></li>
+                  <li><a href="#">#야간조명</a></li>
+                </ul>
+                <p class="price">1시간 60,000원</p>
+              </div>
+            </li>
+            <li class="ground_list">
+              <div class="img">
+                <img src="img/ground_05.jpg" alt="">
+              </div>
+              <div class="info">
+                <p class="place">청주FC 풋살센터 A구장</p>
+                <p class="like"><i class="fa-solid fa-heart"></i>17</p>
+                <ul>
+                  <li><a href="#">#주차장</a></li>
+                  <li><a href="#">#야간조명</a></li>
+                </ul>
+                <p class="price">1시간 25,000원</p>
+              </div>
+            </li>
+            <li class="ground_list">
+              <div class="img">
+                <img src="img/ground_06.jpg" alt="">
+              </div>
+              <div class="info">
+                <p class="place">유성풋살 3구장</p>
+                <p class="like"><i class="fa-solid fa-heart"></i>16</p>
+                <ul>
+                  <li><a href="#">#주차장</a></li>
+                  <li><a href="#">#야간조명</a></li>
+                </ul>
+                <p class="price">1시간 50,000원</p>
+              </div>
+            </li>
+            <li class="ground_list">
+              <div class="img">
+                <img src="img/ground_07.jpg" alt="">
+              </div>
+              <div class="info">
+                <p class="place">챔피언스풋살장(북구점) 2구장</p>
+                <p class="like"><i class="fa-solid fa-heart"></i>47</p>
+                <ul>
+                  <li><a href="#">#주차장</a></li>
+                  <li><a href="#">#야간조명</a></li>
+                </ul>
+                <p class="price">1시간 30,000원</p>
+              </div>
+            </li>
+            <li class="ground_list">
+              <div class="img">
+                <img src="img/ground_08.png" alt="">
+              </div>
+              <div class="info">
+                <p class="place">챔피언스풋살장(상무점) 4구장</p>
+                <p class="like"><i class="fa-solid fa-heart"></i>88</p>
+                <ul>
+                  <li><a href="#">#주차장</a></li>
+                  <li><a href="#">#샤워장</a></li>
+                  <li><a href="#">#야간조명</a></li>
+                  <li><a href="#">#풋살화대여</a></li>
+                </ul>
+                <p class="price">1시간 30,000원</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="more">
+          <a href="#">더 보기</a>
+        </div>
+      </div>
+    </section>
+    <!-- subFooter -->
+    <section id="subFooter">
+      <div class="wrap">
+        <div class="top">
+          <h1 class="logo">PHANTOM</h1>
+        </div>
+        <div class="info">
+          <p>주소 : 서울특별시 강남구 역삼동 635-10 장연빌딩 6층</p>
+          <p>TEL : 02-3481-1005 | EMAIL : green@phantom.com</p>
+          <p>Copyright © PHANTOM All rights reserved. </p>
+        </div>
+        <div class="sns">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div class="wrap">
+      <ul>
+        <li>
+          <a href="reservation.html">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>구장예약</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="fa-regular fa-file-lines"></i>
+            <p>예약정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;홈&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-people-group"></i>
+            <p>커뮤니티</p>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <p>로그인</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>

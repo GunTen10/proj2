@@ -1,0 +1,95 @@
+/* loginForm */
+.login {
+  padding: 10px 10px 50px;
+  border-bottom: 1px solid #000;
+}
+.login .title {
+  margin: 50px 0;
+}
+.login .title p {
+  font-size: 30px;
+  text-align: center;
+}
+.login .input {
+  display: flex;
+  flex-direction: column;
+}
+.login .input input {
+  margin: 5px 0;
+  padding: 0 15px;
+  line-height: 40px;
+  border: 3px solid #000;
+  border-radius: 20px;
+  outline: none;
+  transition: all .3s;
+}
+.login input:hover{
+  border: 3px solid #69CA67;
+}
+.login input:focus{
+  color: #000;
+  border: 3px solid #69CA67;
+}
+.login .checkBox {
+  padding: 10px 0;
+}
+.login .checkBox ul {
+  display: flex;
+  justify-content: center;
+}
+.login .checkBox li {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.login .checkBox input {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+.login .checkBox p {}
+.login .loginBtn {}
+.login .loginBtn input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 0 15px;
+  line-height: 40px;
+  border: 3px solid #000;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFF;
+  background-color: #000;
+  cursor: pointer;
+  transition: all .3s;
+}
+.login .loginBtn input:hover {
+  border: 3px solid #69CA67;
+  color: rgb(255, 255, 219);
+  background-color: #69CA67;
+
+}
+.login .signUp {
+  padding: 10px 0;
+}
+.login .signUp ul {
+  display: flex;
+  justify-content: center;
+}
+.login .signUp .left {
+  position: relative;
+  margin-right: 20px;
+}
+.login .signUp .left::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: #000;
+}
+.login .signUp .right {}
+.login .signUp a {}
+.login .signUp p {}

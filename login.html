@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팬텀-로그인</title>
+  <link rel="icon" href="img/pc_favicon.svg" colo>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="https://kit.fontawesome.com/e2f89fe93c.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="wrap">
+      <h1 class="logo">PHANTOM</h1>
+      <div class="navBtn">
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </div>
+    </div>
+  </header>
+  <!-- navBar On시 배경색 지정 -->
+  <div class="dark"></div>
+  <!-- navigation bar -->
+  <div class="navBar">
+    <div class="wrap">
+      <!-- navBar_top -->
+      <div class="top">
+        <a href="login.html" class="loginBtn">
+          <p>로그인</p>
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+        <a href="#" class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+      <!-- navBar_middle -->
+      <div class="middle">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-futbol"></i>
+              <p>소개</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-rectangle-list"></i>
+              <p>공지사항</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-gift"></i>
+              <p>이벤트</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-circle-question"></i>
+              <p>문의</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-book-skull"></i>
+              <p>블랙리스트</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navBar_bottom -->
+      <div class="bottom">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-square-facebook"></i>
+              <p>페이스북</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+              <p>인스타그램</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-square-twitter"></i>
+              <p>트위터</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- main -->
+  <main>
+    <div class="login">
+      <div class="title">
+        <p>풋살하고 싶을 땐<br>PHANTOM</p>
+      </div>
+      <div class="input">
+        <input type="text" placeholder="아이디 또는 이메일">
+        <input type="text" placeholder="비밀번호">
+      </div>
+      <div class="checkBox">
+        <ul>
+          <li>
+            <input type="checkbox" checked>
+            <p>아이디 저장</p>
+          </li>
+          <li>
+            <input type="checkbox">
+            <p>자동 로그인</p>
+          </li>
+        </ul>
+      </div>
+      <div class="loginBtn">
+        <input type="submit" value="로그인">
+      </div>
+      <div class="signUp">
+        <ul>
+          <li class="left">
+            <a href="">
+              <p>아이디 / 비밀번호 찾기</p>
+            </a>
+          </li>
+          <li class="right">
+            <a href="">
+              <p>회원가입</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- subFooter -->
+    <section id="subFooter">
+      <div class="wrap">
+        <div class="top">
+          <h1 class="logo">PHANTOM</h1>
+        </div>
+        <div class="info">
+          <p>주소 : 서울특별시 강남구 역삼동 635-10 장연빌딩 6층</p>
+          <p>TEL : 02-3481-1005 | EMAIL : green@phantom.com</p>
+          <p>Copyright © PHANTOM All rights reserved. </p>
+        </div>
+        <div class="sns">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div class="wrap">
+      <ul>
+        <li>
+          <a href="reservation.html">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>구장예약</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+              <i class="fa-regular fa-file-lines"></i>
+            <p>예약정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;홈&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-people-group"></i>
+            <p>커뮤니티</p>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <p>로그인</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>

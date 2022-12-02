@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/maskable_icon.png" type="image/x-icon" />
+	<link rel="manifest" href="manifest.json">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>팬텀-풋살 매칭 플랫폼</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script src="https://kit.fontawesome.com/e2f89fe93c.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script defer src="js/main.js"></script>
+  <script>
+		if ("serviceWorker" in navigator) {
+			// 서비스워커가 있을때
+			navigator.serviceWorker
+				.register("sw.js") // 등록
+				.then(function (success) {
+					console.log("serviceworker 설치에 성공했습니다!!", success);
+				})
+				.catch(function (error) {
+					console.log("serviceworker 설치 실패..", error);
+				});
+		}
+	</script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="wrap">
+      <h1 class="logo">PHANTOM</h1>
+      <div class="navBtn">
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </div>
+    </div>
+  </header>
+  <!-- navBar On시 배경색 지정 -->
+  <div class="dark"></div>
+  <!-- navigation bar -->
+  <div class="navBar">
+    <div class="wrap">
+      <!-- navBar_top -->
+      <div class="top">
+        <a href="login.html" class="loginBtn">
+          <p>로그인</p>
+          <i class="fa-solid fa-right-to-bracket"></i>
+        </a>
+        <a href="#" class="close">
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+      <!-- navBar_middle -->
+      <div class="middle">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-futbol"></i>
+              <p>소개</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-rectangle-list"></i>
+              <p>공지사항</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-gift"></i>
+              <p>이벤트</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-circle-question"></i>
+              <p>문의</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-book-skull"></i>
+              <p>블랙리스트</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navBar_bottom -->
+      <div class="bottom">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-square-facebook"></i>
+              <p>페이스북</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+              <p>인스타그램</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-square-twitter"></i>
+              <p>트위터</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- main -->
+  <main>
+    <!-- visual -->
+    <section id="visual">
+      <div class="slider-wrap">
+        <div class="visualSlide visualSlide01"></div>
+        <div class="visualSlide visualSlide02"></div>
+        <div class="visualSlide visualSlide03"></div>
+      </div>
+    </section>
+    <section id="recommendation">
+      <div class="wrap">
+        <div class="text">
+          <h2>원하는 풋살장이 없다면<br>추천해 주세요.</h2>
+          <a href="#">추천하기</a>
+        </div>
+        <div class="img">
+          <img src="img/img_thunder.png" alt="추천">
+        </div>
+      </div>
+    </section>
+    <!-- function -->
+    <section id="function">
+      <div class="wrap">
+        <ul class="top">
+          <li>
+            <a href="reservation.html">
+              <i class="fa-solid fa-calendar-days"></i>
+              <p>예약하기</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-user-plus"></i>
+              <p>용병참가</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-person-chalkboard"></i>
+              <p>축구레슨</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="bottom">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-heart-circle-plus"></i>
+              <p>찜 목록</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>예약정보</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-table-list"></i>
+              <p>대회정보</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- recruit -->
+    <section id="recruit">
+      <div class="wrap">
+        <!-- 풋살장 검색 -->
+        <div class="search_ground">
+          <input type="text" placeholder="풋살장 이름 및 지역을 입력하세요.">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <!-- 용병 모집 -->
+        <div class="notice">
+          <div class="title">
+            <p>용병 모집</p>
+            <a href="#">더 보기</a>
+          </div>
+          <div class="content">
+            <ul>
+              <li>
+                <p class="country">&#91;서울&nbsp;강북&#93;</p>
+                <p class="text">오늘 저녁 8시 티키타카 축구교실 홈플러스에서 하실 분 1명</p>
+              </li>
+              <li>
+                <p class="country">&#91;강원&nbsp;원주&#93;</p>
+                <p class="text">내일 밤 10시 따뚜 풋살장 1명</p>
+              </li>
+              <li>
+                <p class="country">&#91;전북&nbsp;부안&#93;</p>
+                <p class="text">오늘 6시 청림천문대 2명!!</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 동호회 회원 모집 -->
+        <div class="notice">
+          <div class="title">
+            <p>동호회 회원 모집</p>
+            <a href="#">더 보기</a>
+          </div>
+          <div class="content">
+            <ul>
+              <li>
+                <p class="country">&#91;서울&nbsp;노원&#93;</p>
+                <p class="text">안녕하세요! 노원FC입니다.</p>
+              </li>
+              <li>
+                <p class="country">&#91;충북&nbsp;충주&#93;</p>
+                <p class="text">충주, 청주 중심으로 활동하는 풋살동호회입니다.</p>
+              </li>
+              <li>
+                <p class="country">&#91;전남&nbsp;광양&#93;</p>
+                <p class="text">광양FC 인원 모집합니다.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- subFooter -->
+    <section id="subFooter">
+      <div class="wrap">
+        <div class="top">
+          <h1 class="logo">PHANTOM</h1>
+        </div>
+        <div class="info">
+          <p>주소 : 서울특별시 강남구 역삼동 635-10 장연빌딩 6층</p>
+          <p>TEL : 02-3481-1005 | EMAIL : green@phantom.com</p>
+          <p>Copyright © PHANTOM All rights reserved. </p>
+        </div>
+        <div class="sns">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
+    <div class="wrap">
+      <ul>
+        <li>
+          <a href="reservation.html">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>구장예약</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-regular fa-file-lines"></i>
+            <p>예약정보</p>
+          </a>
+        </li>
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;홈&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-people-group"></i>
+            <p>커뮤니티</p>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <p>로그인</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
